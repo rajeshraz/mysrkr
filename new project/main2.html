@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding-left:20%;
+    font-size: xx-large;
+    font-style: inherit;
+    color: brown;
+}
+nav{
+    width:100%;
+padding-top: 2px;
+padding-bottom: 2px;
+    background-color:#262626;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  color: #a855f7;
+}
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color:skyblue;
+  
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+form{
+    
+    display:flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 100%;
+    height:100%;
+    gap: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+ isolation: isolate;
+    
+} 
+input {
+background: rgba(226, 12, 12, 0.3);
+height :40px;
+line-height: 40px;
+border-radius: 20px;
+padding : 0px 20px;
+border : none ;
+margin-bottom :20px;
+}
+input:hover{
+    background-color:whitesmoke;
+}
+input::placeholder{
+    color: black;
+    text-transform: uppercase;
+}
+.home{
+    padding: 50px 50px 50px; 
+}
+:target .home form {
+            display: flex;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.jpeg" style="height: 150px; ">
+        <h1 > ASTEAM EXAMS </h1>
+    </div>
+ <div class="nav__content">
+    <nav>
+        <ul>
+            <li><a href="main2.html">Home</a></li>
+            <li><a href="student2.html">Student Registration</a></li>
+            <li><a href="main2.html">Exam</a></li>
+            <li><a href="main2.html"> Student Data</a></li>
+            <li><a href="studentexam.html">Student EXam</a></li>
+            <li><a href="main2.html">Paper Correction</a></li>
+            <li><a href="studentscore.html">Student Score</a></li>
+            
+
+        </ul>
+    </nav>
+   
+</div>
+<div id="home" class="home">
+    <form>
+        <input type="email" id="email" name="email" placeholder="Enter id" required>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</body>
+</html>

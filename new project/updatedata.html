@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+    background-color:rgb(252, 246, 246);
+height:9vh;
+
+}
+
+nav ul {
+    list-style-type: none;
+
+    white-space: nowrap;
+}
+
+nav ul li {
+    display: flex;
+    display: inline-block; 
+    margin-right: 20px; 
+    margin-top: 01px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: rgb(5, 0, 0);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 10%;
+}
+ul li a:hover {
+
+  color: orange;
+}
+.dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #090000;
+        min-width: 160px;
+        z-index: 1;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: rgb(253, 249, 249);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    button {
+  text-decoration: none;
+  list-style-type: none;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  color: #fff;
+  width: 15em;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+button:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+button:hover::before {
+  filter: blur(20px);
+}
+
+button:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+button a {
+            text-decoration: none;
+            color: inherit; 
+        }
+      
+        form{
+    display: inline-block;
+    flex-direction: column;
+}
+
+
+.login{
+    
+    width: 500 px;
+    height : 40 px;
+
+    color: white;
+    border-radius : 20px;
+    padding-top: 5%;
+    padding-left: 25%;
+}
+form { 
+display : block;
+box-sizing : border-box;
+border-radius: 0%;
+width: 70%;
+height: 10%;
+background-color: sandybrown;
+height:0%;
+backdrop-filter: brightness(40%);
+flex-direction: column;
+display: flex;
+gap:5 px;
+
+
+
+
+}
+
+label{
+    color:whitesmoke;
+    text-transform:uppercase;
+    font-size: 20px;
+    letter-spacing :2px;
+    padding-left : 40px;
+
+
+}
+input {
+background:white;
+margin-left: 40px;
+width: 60%;
+height :40px;
+border:blueviolet;
+line-height: 30px;
+border-radius: 0px;
+padding :0px 0px;
+border : none ;
+margin-bottom :20px;
+color : white;
+padding-left : 0px;
+
+}
+.radio label{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+.radio input{
+    display: flex;
+    flex-direction: row;
+    width:20%;
+height :20px;
+
+}
+.radio input,
+        .radio label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .header{
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.5) ;
+    margin-bottom : 60px;
+    width: 40%;
+    padding-left: 10%;
+    margin-left: 20%;
+
+}
+.button2{
+  padding-left: 60%;
+  margin-bottom: 10%;
+}
+    </style>
+</head>
+
+<nav>
+    <ul>
+       <li>
+           <li><h2 style="margin-left: 7%; margin-top: 20px; color: red;">AST</h2></li>
+           <li><a href="first.html">HOME</a></li>
+           <li><a href="attendance.html">ATTENDANCE</a></li>
+           <li><a href="#">FEATURES</a></li>
+           <li class="dropdown">
+               <a href="#" class="dropbtn">MORE</a>
+               <div class="dropdown-content">
+                   <a href="addproject.html">Add Projects</a>
+                   <a href="#">Projects</a>
+                   <a href="scrummasters.html">Scrum Masters</a>
+               </div>
+           </li>
+       </li>
+    </ul>   
+   </nav> 
+   <br><br><br>
+<div class="buttons" style="display: flex; justify-content: space-between;">
+    <button ><a href="#">DAILY ATTENDANCE</a></button>
+  <button><a href="updatedata.html">UPDATE DATA</a></button>
+  <button><a href="#">DAILY WORK SUBMISSION</a></button>
+</div>
+<div class="login">
+    
+    <form>
+        <h2 class="header" style=" background-color: white; height: 7vh; color:black; padding-left: 10%;padding-right: 10%;  text-align: center;">UPDATE YOUR DATA</h2>
+        <label>STUDENT  EMAIL :</label>
+        <input type="email" required>
+        <label>STUDENT NAME :</label>
+        <input type="text" required>
+        <label>REGISTRATION NUM :</label>
+        <input type="text" required>
+  <div class="radio">  
+       <p>SELECT YOUR  YEAR :</p>
+
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">1 st</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">2 nd</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="css">3 rd</label><br>
+  </div>
+  <div class="button2">
+  <button >UPDATE</button>
+  </div>
+</div>
+
+<body>
+    
+</body>
+</html>
